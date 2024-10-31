@@ -1,0 +1,14 @@
+{
+    "name": "할일 관리 앱",
+    "short_name": "TodoPWA",
+    "description": "간단한 할일 관리 Progressive Web App",
+    "start_url": "/",
+    "display": "fullscreen",
+    "background_color": "#ffffff",
+    "theme_color": "#4CAF50",
+    "orientation": "portrait-primary",
+    "dir": "ltr",
+    "lang": "ko-KR",
+    "scope": "/",
+    "categories": ["productivity"]
+  }

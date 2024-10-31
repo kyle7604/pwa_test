@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>할일 관리 앱</title>
+    
+    <!-- PWA 메타태그 -->
+    <meta name="theme-color" content="#4CAF50">
+    <meta name="description" content="간단한 할일 관리 Progressive Web App">
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="TodoPWA">
+    
+    <!-- manifest 연결 -->
+    <link rel="manifest" href="./manifest.json">
+    
+    <!-- 스타일시트 연결 -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>할일 관리</h1>
+        </header>
+
+        <main>
+            <form id="todo-form">
+                <input type="text" id="todo-input" placeholder="할일을 입력하세요" required>
+                <button type="submit">추가</button>
+            </form>
+
+            <div class="todo-list-container">
+                <h2>할일 목록</h2>
+                <ul id="todo-list"></ul>
+            </div>
+        </main>
+
+        <div id="offline-message" class="hidden">
+            오프라인 모드입니다
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
